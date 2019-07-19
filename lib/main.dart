@@ -8,7 +8,7 @@ class App extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Hut in Rent Demo',
+      title: 'Hut in Rent',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
           primaryColor: Color(0xFFF9A825),
