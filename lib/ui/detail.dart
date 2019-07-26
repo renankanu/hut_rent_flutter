@@ -41,14 +41,6 @@ final List child = map<Widget>(
                 ),
               ),
               padding: EdgeInsets.symmetric(vertical: 10.0, horizontal: 20.0),
-              child: Text(
-                'Image house No. $index',
-                style: TextStyle(
-                  color: Colors.white,
-                  fontSize: 20.0,
-                  fontWeight: FontWeight.bold,
-                ),
-              ),
             ),
           ),
         ]),
@@ -77,11 +69,14 @@ class _DetailState extends State<Detail> {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.center,
         children: <Widget>[
-          Padding(padding: EdgeInsets.only(top: 8, bottom: 8),child: Text(
-            'Details',
-            style: TextStyle(fontFamily: 'Montserrat', fontSize: 24),
-            textAlign: TextAlign.center,
-          ),),
+          Padding(
+            padding: EdgeInsets.only(top: 8, bottom: 8),
+            child: Text(
+              'Details',
+              style: TextStyle(fontFamily: 'Montserrat', fontSize: 24),
+              textAlign: TextAlign.center,
+            ),
+          ),
           CarouselSlider(
             items: child,
             autoPlay: false,
@@ -114,49 +109,117 @@ class _DetailState extends State<Detail> {
             indent: 8,
             endIndent: 8,
           ),
-          Card(
-              shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(8)),
-              child: Container(
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.start,
-                  children: <Widget>[
-                    ClipRRect(
-                      borderRadius: BorderRadius.circular(50.0),
-                      child: Image.network(
-                        'https://marianaruizwriting.com/wp-content/uploads/2018/06/Mariana-website-photo-2018.jpg',
-                        height: 80.0,
-                        width: 80.0,
-                      ),
-                    ),
-                    SizedBox(
-                      width: 10.0,
-                    ),
-                    Column(
-                      mainAxisAlignment: MainAxisAlignment.start,
+          Padding(
+            padding: EdgeInsets.only(left: 8, right: 8),
+              child: Card(
+                child: Container(
+                  width: double.infinity,
+                  child: Column(children: <Widget>[
+                    Row(children: <Widget>[
+                      Text(
+                        'Apartment',
+                        style: TextStyle(fontFamily: 'MontserratBold', fontSize: 24),
+                      )
+                    ],),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                       children: <Widget>[
-                        Text(
-                          'owner name: Larissa',
-                          style: TextStyle(
-                              fontFamily: 'Montserrat',
-                              fontSize: 16,
-                              fontWeight: FontWeight.bold),
-                        ),
-                        Text('Rent: \$500/mounth',
-                            style: TextStyle(
-                                fontFamily: 'Montserrat',
-                                fontSize: 16,
-                                fontWeight: FontWeight.bold)),
-                        Text('Rent paid on: June 02, 2019',
-                            style: TextStyle(
-                                fontFamily: 'Montserrat',
-                                fontSize: 16,
-                                fontWeight: FontWeight.bold)),
-                      ],
-                    ),
+                      Column(children: <Widget>[
+                        Text('Um'),
+                        Text('Dois'),
+                        Text('Tres'),
+                      ],),
+                      Column(children: <Widget>[
+                        Text('Quatro'),
+                        Text('Cinco'),
+                        Text('Seix'),
+                      ],)
+                    ],)
+                  ],))
+              ),
+          ),
+          Row(
+            children: <Widget>[
+              Padding(
+                padding: EdgeInsets.all(8),
+                child: ClipRRect(
+                  borderRadius: BorderRadius.circular(50.0),
+                  child: Image.network(
+                    'https://marianaruizwriting.com/wp-content/uploads/2018/06/Mariana-website-photo-2018.jpg',
+                    height: 80.0,
+                    width: 80.0,
+                    fit: BoxFit.cover,
+                  ),
+                ),
+              ),
+              Container(
+                height: 80,
+                child: Column(
+                  mainAxisAlignment: MainAxisAlignment.spaceAround,
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  mainAxisSize: MainAxisSize.max,
+                  children: <Widget>[
+                    RichText(
+                        text: TextSpan(
+                            // set the default style for the children TextSpans
+                            style: DefaultTextStyle.of(context).style,
+                            children: [
+                          TextSpan(
+                              text: 'Owner: ',
+                              style: TextStyle(fontFamily: 'MontserratLight')),
+                          TextSpan(
+                              text: 'Marianna Souza',
+                              style: TextStyle(
+                                  fontFamily: 'MontserratMedium',
+                                  fontWeight: FontWeight.w400)),
+                        ])),
+                    RichText(
+                        text: TextSpan(
+                            // set the default style for the children TextSpans
+                            style: DefaultTextStyle.of(context).style,
+                            children: [
+                          TextSpan(
+                              text: 'Contact: ',
+                              style: TextStyle(fontFamily: 'MontserratLight')),
+                          TextSpan(
+                              text: '+55 44 99722-8610',
+                              style: TextStyle(
+                                  fontFamily: 'MontserratMedium',
+                                  fontWeight: FontWeight.w400)),
+                        ])),
+                    RichText(
+                        text: TextSpan(
+                            // set the default style for the children TextSpans
+                            style: DefaultTextStyle.of(context).style,
+                            children: [
+                          TextSpan(
+                              text: 'Rent: ',
+                              style: TextStyle(fontFamily: 'MontserratLight')),
+                          TextSpan(
+                              text: '\$250/month',
+                              style: TextStyle(
+                                  fontFamily: 'MontserratMedium',
+                                  fontWeight: FontWeight.w400)),
+                        ])),
+                    RichText(
+                        text: TextSpan(
+                            // set the default style for the children TextSpans
+                            style: DefaultTextStyle.of(context).style,
+                            children: [
+                          TextSpan(
+                              text: 'Reputation: ',
+                              style: TextStyle(fontFamily: 'MontserratLight')),
+                          TextSpan(
+                              text: 'Good',
+                              style: TextStyle(
+                                  fontFamily: 'MontserratMedium',
+                                  fontWeight: FontWeight.w400)),
+                        ])),
                   ],
                 ),
-              )),
+              )
+            ],
+          )
         ],
       ),
     );
