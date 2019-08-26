@@ -49,7 +49,7 @@ class _LoginState extends State<Login> {
                   margin: EdgeInsets.only(top: 32),
                   child: Text(
                     'Welcome on Hut Rent!',
-                    style: TextStyle(fontFamily: 'Montserrat', fontSize: 24),
+                    style: TextStyle(fontFamily: 'MontserratMedium', fontSize: 24),
                   ),
                 ),
                 Container(
@@ -67,7 +67,7 @@ class _LoginState extends State<Login> {
                         textAlign: TextAlign.center,
                         decoration: InputDecoration(
                             border: InputBorder.none, hintText: 'E-MAIL'),
-                        style: TextStyle(fontFamily: 'Montserrat'),
+                        style: TextStyle(fontFamily: 'MontserratRegular'),
                       ),
                       Divider(
                         color: Color(0xFF3D6D85),
@@ -79,7 +79,7 @@ class _LoginState extends State<Login> {
                         textAlign: TextAlign.center,
                         decoration: InputDecoration(
                             border: InputBorder.none, hintText: 'PASSWORD'),
-                        style: TextStyle(fontFamily: 'Montserrat'),
+                        style: TextStyle(fontFamily: 'MontserratRegular'),
                       ),
                     ],
                   ),
@@ -103,7 +103,7 @@ class _LoginState extends State<Login> {
                               Text(
                                 'Remember me',
                                 style: TextStyle(
-                                    fontFamily: 'Montserrat',
+                                    fontFamily: 'MontserratRegular',
                                     color: Color(0xFF3D6D85)),
                               ),
                             ],
@@ -111,7 +111,7 @@ class _LoginState extends State<Login> {
                         ),
                         Text('Forgot Password?',
                             style: TextStyle(
-                                fontFamily: 'Montserrat',
+                                fontFamily: 'MontserratRegular',
                                 color: Color(0xFF3D6D85)))
                       ],
                     )),
@@ -126,7 +126,7 @@ class _LoginState extends State<Login> {
                       style: TextStyle(
                           color: Colors.white,
                           fontSize: 18,
-                          fontFamily: 'Montserrat'),
+                          fontFamily: 'MontserratMedium'),
                     ),
                     onPressed: () {
                       Navigator.pushReplacement(context,
@@ -144,7 +144,7 @@ class _LoginState extends State<Login> {
                       overflow: TextOverflow.ellipsis,
                       softWrap: true,
                       style: TextStyle(
-                          fontFamily: 'Montserrat',
+                          fontFamily: 'MontserratRegular',
                           fontWeight: FontWeight.w300,
                           letterSpacing: 0.5,
                           color: Color(0xFF3D6D85),

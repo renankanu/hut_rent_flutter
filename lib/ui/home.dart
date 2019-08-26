@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
-import 'detail.dart';
 import 'profile.dart';
+import 'rents.dart';
 import 'search.dart';
 
 class Home extends StatefulWidget {
@@ -12,7 +12,7 @@ class Home extends StatefulWidget {
 
 class _HomeState extends State<Home> {
   int _selectedIndex = 0;
-  static List<Widget> _widgetList = <Widget>[Detail(), Search(), Profile()];
+  static List<Widget> _widgetList = <Widget>[Rents(), Search(), Profile()];
 
   void _onItemTapped(int index) {
     setState(() {
@@ -26,19 +26,19 @@ class _HomeState extends State<Home> {
         SystemUiOverlayStyle.dark.copyWith(statusBarColor: Colors.transparent));
     return Scaffold(
       body: SafeArea(
-          child: _widgetList.elementAt(_selectedIndex),
-        ),
+        child: _widgetList.elementAt(_selectedIndex),
+      ),
       bottomNavigationBar: BottomNavigationBar(
         items: <BottomNavigationBarItem>[
           BottomNavigationBarItem(
-            icon: Icon(IconData(0xe801, fontFamily: 'Icons')),
+            icon: Icon(IconData(0xe800, fontFamily: 'Icons')),
             title: Text(
               'Home',
               style: TextStyle(fontFamily: 'Montserrat'),
             ),
           ),
           BottomNavigationBarItem(
-            icon: Icon(IconData(0xe800, fontFamily: 'Icons')),
+            icon: Icon(IconData(0xe86f, fontFamily: 'Icons')),
             title: Text(
               'Search',
               style: TextStyle(fontFamily: 'Montserrat'),

@@ -17,7 +17,7 @@ class MarkerIconsBody extends StatefulWidget {
   State<StatefulWidget> createState() => MarkerIconsBodyState();
 }
 
-const LatLng _kMapCenter = LatLng(32.893105, -6.922553);
+const LatLng _kMapCenter = LatLng(26.442484, -81.931199);
 
 class MarkerIconsBodyState extends State<MarkerIconsBody> {
   GoogleMapController controller;

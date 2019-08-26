@@ -30,7 +30,7 @@ class _SignUpState extends State<SignUp> {
           title: Text(
             'Sign Up',
             style: TextStyle(
-                fontFamily: 'Montserrat',
+                fontFamily: 'MontserratLight',
                 fontWeight: FontWeight.bold,
                 color: Colors.white),
           ),
@@ -75,7 +75,7 @@ class _SignUpState extends State<SignUp> {
                       child: TextField(
                         decoration: InputDecoration(
                             border: InputBorder.none, hintText: 'Full Name'),
-                        style: TextStyle(fontFamily: 'Montserrat'),
+                        style: TextStyle(fontFamily: 'MontserratRegular'),
                       ),
                     ),
                   ),
@@ -90,7 +90,7 @@ class _SignUpState extends State<SignUp> {
                       child: TextField(
                         decoration: InputDecoration(
                             border: InputBorder.none, hintText: 'E-mail'),
-                        style: TextStyle(fontFamily: 'Montserrat'),
+                        style: TextStyle(fontFamily: 'MontserratRegular'),
                       ),
                     ),
                   ),
@@ -105,7 +105,7 @@ class _SignUpState extends State<SignUp> {
                       child: TextField(
                         decoration: InputDecoration(
                             border: InputBorder.none, hintText: 'Phone Number'),
-                        style: TextStyle(fontFamily: 'Montserrat'),
+                        style: TextStyle(fontFamily: 'MontserratRegular'),
                       ),
                     ),
                   ),
@@ -126,7 +126,7 @@ class _SignUpState extends State<SignUp> {
                                     ? Icons.visibility_off
                                     : Icons.visibility),
                                 onPressed: _togglePassword)),
-                        style: TextStyle(fontFamily: 'Montserrat'),
+                        style: TextStyle(fontFamily: 'MontserratRegular'),
                         obscureText: _obscurePassword,
                       ),
                     ),
@@ -148,7 +148,7 @@ class _SignUpState extends State<SignUp> {
                                     ? Icons.visibility_off
                                     : Icons.visibility),
                                 onPressed: _toggleRepPassword)),
-                        style: TextStyle(fontFamily: 'Montserrat'),
+                        style: TextStyle(fontFamily: 'MontserratRegular'),
                         obscureText: _obscureRepPassword,
                       ),
                     ),
@@ -162,7 +162,7 @@ class _SignUpState extends State<SignUp> {
                         child: Text(
                           'Sign Up',
                           style: TextStyle(
-                              fontFamily: 'Montserrat', color: Colors.white),
+                              fontFamily: 'MontserratSemiBold', color: Colors.white),
                         ),
                       ),
                       splashColor: Colors.grey,
@@ -179,7 +179,7 @@ class _SignUpState extends State<SignUp> {
                       children: <Widget>[
                         Text(
                           'Alredy have an account?',
-                          style: TextStyle(fontFamily: 'Montserrat'),
+                          style: TextStyle(fontFamily: 'MontserratRegular'),
                         ),
                         SizedBox(
                           width: 5.0,
@@ -194,7 +194,7 @@ class _SignUpState extends State<SignUp> {
                           child: Text(
                             'Login',
                             style: TextStyle(
-                                fontFamily: 'Montserrat',
+                                fontFamily: 'MontserratRegular',
                                 fontWeight: FontWeight.bold),
                           ),
                         ),
